@@ -1,3 +1,134 @@
-.brand {
-  font-size: 2em;
+.home {
+
+}
+
+.heading {
+  float: left;
+  width: 100%;
+  padding: 60px 0;
+  background-image: url(../images/background.png);
+  background-color: $color-primary;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  .header {
+    margin-bottom: 45px;
+    .brand {
+      float: left;
+      font-size: 1.25em;
+      font-weight: 700;
+      text-shadow: 2px 2px 0px rgba(0,0,0,.1);
+      color: #fff;
+      box-shadow: none;
+    }
+    .brand:hover {
+      background-color: transparent;
+      text-shadow: 2px 2px 0px rgba(0,0,0,.2);
+    }
+    @media (min-width: 768px) {
+      .brand {
+        font-size: 1.5em;
+        letter-spacing: 5px;
+      }
+      .brand:hover {
+        text-shadow: 2px 2px 0px rgba(0,0,0,.2);
+      }
+    }
+    .link-contact {
+      float: right;
+      padding: 6px 0;
+      a {
+        color: #fff;
+      }
+      a:hover {
+        color: #666;
+      }
+    }
+  }
+  .welcome {
+    .title {
+      color: #fff;
+      font-size: 3em;
+      font-weight: 700;
+      letter-spacing: -2px;
+      margin-bottom: 60px;
+    }
+    @media (min-width: 768px) {
+      .title {
+        font-size: 4em;
+      }
+    }
+    .lead {
+
+    }
+    a {
+      color: #fff;
+    }
+    a:hover {
+      color: #666;
+    }
+  }
+}
+
+.highlights {
+  float: left;
+  width: 100%;
+  padding: 60px 0;
+  background-color: #fafafa;
+  .section-title {
+    margin-bottom: 60px;
+    color: #666;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .single {
+    float: left;
+    margin-bottom: 60px;
+    box-shadow: none;
+    img {
+      margin-bottom: 15px;
+      border: 1px solid rgba(0,0,0,0.05);
+    }
+    h3 {
+      margin-top: 15px;
+    }
+  }
+  .single:hover {
+    box-shadow: none;
+    background-color: transparent;
+    h3 {
+      color: $color-primary;
+    }
+  }
+}
+
+.get-in-touch {
+  float: left;
+  width: 100%;
+  padding: 60px 0;
+  background-color: #fff;
+  border-top: 1px solid #f2f2f2;
+  .section-title {
+    margin-bottom: 60px;
+    color: #666;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .title {
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: -2px;
+    margin-bottom: 60px;
+  }
+  .lead {
+    margin-bottom: 60px;
+  }
+  .bottom-line {
+    padding-top: 60px;
+    margin-top: 60px;
+    border-top: 1px solid #e5e5e5;
+  }
 }
