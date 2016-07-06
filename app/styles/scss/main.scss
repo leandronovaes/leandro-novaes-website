@@ -1,4 +1,5 @@
-$color-primary: #00bcd4;
+$color-primary: #64b5f6;
+$color-secondary: #ffe0b2;
 
 body {
   background-color: #fff;
@@ -11,15 +12,15 @@ body {
 
 a {
   color: #666;
-  box-shadow: 0 3px 0 #cfe5cf;
-  transition: .2s;
+  box-shadow: 0 3px 0 $color-secondary;
+  transition: .25s;
 }
 
 a:hover {
   color: #666;
   text-decoration: none;
-  box-shadow: 0 3px 0 #cfe5cf;
-  background-color: #cfe5cf;
+  box-shadow: 0 3px 0 $color-secondary;
+  background-color: $color-secondary;
   border-radius: 2px;
 }
 
@@ -49,7 +50,7 @@ p {
 }
 
 .img-responsive {
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 @media (min-width: 1200px) {

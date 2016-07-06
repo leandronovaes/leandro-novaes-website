@@ -2,48 +2,45 @@
 
 }
 
+/*
+ Heading section
+ */
 .heading {
-  float: left;
   width: 100%;
-  padding: 60px 0;
+  padding: 30px 0;
   background-image: url(../images/background.png);
   background-color: $color-primary;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
   .header {
     margin-bottom: 45px;
     .brand {
       float: left;
       font-size: 1.25em;
       font-weight: 700;
-      text-shadow: 2px 2px 0px rgba(0,0,0,.1);
       color: #fff;
       box-shadow: none;
     }
     .brand:hover {
       background-color: transparent;
-      text-shadow: 2px 2px 0px rgba(0,0,0,.2);
+      text-shadow: 2px 2px 0px rgba(0,0,0,.1);
     }
     @media (min-width: 768px) {
       .brand {
         font-size: 1.5em;
         letter-spacing: 5px;
       }
-      .brand:hover {
-        text-shadow: 2px 2px 0px rgba(0,0,0,.2);
-      }
     }
     .link-contact {
       float: right;
-      padding: 6px 0;
-      a {
-        color: #fff;
-      }
-      a:hover {
-        color: #666;
-      }
+      margin-top: 5px;
+      color: #fff;
+    }
+    .link-contact:hover {
+      color: #666;
     }
   }
   .welcome {
@@ -53,10 +50,11 @@
       font-weight: 700;
       letter-spacing: -2px;
       margin-bottom: 60px;
+      // text-shadow: 5px 5px 0 rgba(0,0,0,.2);
     }
     @media (min-width: 768px) {
       .title {
-        font-size: 4em;
+        font-size: 5em;
       }
     }
     .lead {
@@ -70,12 +68,21 @@
     }
   }
 }
+@media (min-width: 768px) {
+  .heading {
+    padding: 60px 0;
+  }
+}
 
+/*
+ Highlights section
+ */
 .highlights {
-  float: left;
   width: 100%;
+  margin-bottom: 700px;
   padding: 60px 0;
   background-color: #fafafa;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
   .section-title {
     margin-bottom: 60px;
     color: #666;
@@ -98,18 +105,30 @@
   .single:hover {
     box-shadow: none;
     background-color: transparent;
+    img {
+
+    }
     h3 {
       color: $color-primary;
     }
   }
 }
+@media (min-width: 768px) {
+  .highlights {
+    margin-bottom: 600px;
+  }
+}
 
+/*
+ Get in touch section
+ */
 .get-in-touch {
-  float: left;
+  position: fixed;
+  bottom: 0;
   width: 100%;
   padding: 60px 0;
   background-color: #fff;
-  border-top: 1px solid #f2f2f2;
+  z-index: -1;
   .section-title {
     margin-bottom: 60px;
     color: #666;
@@ -118,7 +137,7 @@
     text-transform: uppercase;
   }
   .title {
-    font-size: 3em;
+    font-size: 4em;
     font-weight: 700;
     letter-spacing: -2px;
     margin-bottom: 60px;
