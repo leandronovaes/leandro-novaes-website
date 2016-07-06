@@ -79,7 +79,7 @@
  */
 .highlights {
   width: 100%;
-  margin-bottom: 700px;
+  margin-bottom: 550px;
   padding: 60px 0;
   background-color: #fafafa;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
@@ -137,10 +137,15 @@
     text-transform: uppercase;
   }
   .title {
-    font-size: 4em;
+    font-size: 3em;
     font-weight: 700;
     letter-spacing: -2px;
     margin-bottom: 60px;
+  }
+  @media (min-width: 992px) {
+    .title {
+      font-size: 4em;
+    }
   }
   .lead {
     margin-bottom: 60px;
