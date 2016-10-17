@@ -1,5 +1,5 @@
-$color-primary: #64b5f6;
-$color-secondary: #ffe0b2;
+$color-primary: #4f3a4b;
+$color-secondary: #fedccc;
 
 body {
   background-color: #fff;
@@ -8,12 +8,15 @@ body {
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.5px;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
   color: #666;
   box-shadow: 0 3px 0 $color-secondary;
-  transition: .25s;
+  transition: .1s;
 }
 
 a:hover {
@@ -31,13 +34,12 @@ h4,
 h5,
 h6 {
   color: #333;
-  font-family: 'Helvetica Neue', 'Arial', sans-serif;
-  line-height: 100%;
+  font-family: -apple-system, 'Segoe UI', sans-serif;
 }
 
 h1,
 h2 {
-  letter-spacing: -2px;
+  letter-spacing: -1px;
 }
 
 h3,
@@ -51,6 +53,19 @@ p {
 
 .img-responsive {
   border-radius: 4px;
+}
+
+.label {
+  padding: 4px 8px;
+  border-radius: 25px;
+}
+
+.label-success {
+  background-color: #00b28b;
+}
+
+.label-info {
+  background-color: #bfb5d7;
 }
 
 @media (min-width: 1200px) {
