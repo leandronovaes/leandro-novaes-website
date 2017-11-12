@@ -1,3 +1,10 @@
+Hello!
+==========================
+
+ I’m a Product Designer and that's the project for my simple portfolio website. If you want to know more about my work you can find me at http://leandronovaes.com.
+
+ Using a great Gulp Boilerplate named Harvest (http://www.ryanbensonmedia.com/harvest).
+
 Front End Gulp Boilerplate
 ==========================
 
